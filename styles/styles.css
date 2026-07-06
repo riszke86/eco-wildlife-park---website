@@ -1,3 +1,17 @@
+.hero {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
 body {
     background-color: #FFF8DC;
     font-family:Arial, Helvetica, sans-serif
@@ -34,4 +48,117 @@ h4 {
 h5 {
     color: #666
     margin-left: 45px;
+}
+
+.habitat-slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0;
+    background-color: #e8f5e9;
+}
+
+.habitat-track {
+    display: flex;
+    gap: 25px;
+    width: max-content;
+    animation: scrollHabitats 25s linear infinite;
+}
+
+.habitat-slider:hover .habitat-track {
+    animation-play-state: paused;
+}
+
+.habitat-card {
+    position: relative;
+    min-width: 320px;
+    height: 220px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.habitat-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.habitat-card h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    text-shadow: 2px 2px 6px black;
+}
+
+.habitat-card:hover h2 {
+    transform: scale(1.15);
+}
+
+@keyframes scrollHabitats {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.habitat-card {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.habitat-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.habitat-card:hover img {
+    transform: scale(1.1);
+}
+
+
+.habitat-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.1)
+    );
+}
+
+
+.habitat-card h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+    z-index: 2;
+
+    transition: transform .3s ease;
+}
+
+
+.habitat-card video {
+    transition: transform .5s ease;
+}
+
+.habitat-card:hover video {
+    transform: scale(1.08);
 }
