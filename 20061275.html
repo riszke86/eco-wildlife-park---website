@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WildHeart Eco Park</title>
     <link rel = "stylesheet" href = "styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 
@@ -155,54 +156,157 @@
     <h4> Sea Turtle Rescue Centre</h4>
     <h5> Learn about sea turtle conservation and meet rescued turtles recovering before release</h5>
 
-    <h2 id="opening-times">Opening Times</h2>
-    <table border = "1">
+    <section class="opening-section" id="opening-times">
+
+    <div class="today-card">
+        <h3 id="today-title">Today's Opening Time</h3>
+        <p id="today-hours"></p>
+        <p id="open-status"></p>
+        <p id="next-event"></p>
+    </div>
+
+    <h2>Opening Times</h2>
+
+    <p class="opening-subtitle">
+        We're open every day of the week.
+    </p>
+
+    <table class="opening-table">
+
         <tr>
-            <tf></tf>
+            <th>Day</th>
+            <th>Open</th>
+            <th>Close</th>
         </tr>
-        <tr>
-            <td>Day</td>
-            <td>Opening time</td>
-            <td>Closing time</td>
-        </tr>
-        <tr>
-            <td>Monday</td>
-            <td>9 am</td>
-            <td>6 pm</td>
-        </tr>
-        <tr>
-            <td>Tuesday</td>
-            <td>9 am</td>
-            <td>6 pm</td>
-        </tr>
-        <tr>
-            <td>Wednesday</td>
-            <td>9 am</td>
-            <td>6 pm</td>
-        </tr>
-        <tr>
-            <td>Thursday</td>
-            <td>9 am</td>
-            <td>6 pm</td>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>9 am</td>
-            <td>6 pm</td>
-        </tr>
-        <tr>
-            <td>Saturday</td>
-            <td>9 am</td>
-            <td>6 pm</td>
-        </tr>
-        <tr>
-            <td>Sunday</td>
-            <td>9 am</td>
-            <td>6 pm</td>
-        </tr>
+
+       <tr class="day-row">
+    <td>
+        Monday
+        <div class="event-bubble">
+            <strong>Monday Events</strong>
+            <p>10:00 - Macaw Flight Experience</p>
+            <p>11:30 - Elephant Feeding</p>
+            <p>13:00 - Crocodile Feeding</p>
+            <p>14:30 - Sea Turtle Rescue Talk</p>
+            <p>16:00 - Lion Encounter</p>
+        </div>
+    </td>
+    <td>09:00 AM</td>
+    <td>06:00 PM</td>
+</tr>
+
+        <tr class="day-row">
+    <td>
+        Tuesday
+        <div class="event-bubble">
+            <strong>Tuesday Events</strong>
+            <p>10:00 - Zipline Through the Canopy</p>
+            <p>11:30 - Cheetah Speed Demonstration</p>
+            <p>13:00 - Crocodile Feeding</p>
+            <p>14:30 - Snake Handling Show</p>
+            <p>15:30 - Macaw Flight Experience</p>
+            <p>16:00 - Lion Encounter</p>
+        </div>
+    </td>
+    <td>09:00 AM</td>
+    <td>06:00 PM</td>
+</tr>
+
+        <tr class="day-row">
+    <td>
+        Wednesday
+        <div class="event-bubble">
+            <strong>Wednesday Events</strong>
+            <p>10:00 - Sloth Sanctuary</p>
+            <p>11:30 - Elephant Feeding</p>
+            <p>12:30 - Macaw Flight Experience</p>
+            <p>13:00 - Crocodile Feeding</p>
+            <p>14:30 - Sea Turtle Rescue Talk</p>
+            <p>15:00 - Snake Handling Show</p>
+            <p>16:00 - Lion Encounter</p>
+        </div>
+    </td>
+    <td>09:00 AM</td>
+    <td>06:00 PM</td>
+</tr>
+
+        <tr class="day-row">
+    <td>
+        Thursday
+        <div class="event-bubble">
+            <strong>Thursday Events</strong>
+            <p>10:00 - Macaw Flight Experience</p>
+            <p>11:30 - Elephant Feeding</p>
+            <p>13:00 - Crocodile Feeding</p>
+            <p>14:30 - Sea Turtle Rescue Talk</p>
+            <p>16:00 - Lion Encounter</p>
+        </div>
+    </td>
+    <td>09:00 AM</td>
+    <td>06:00 PM</td>
+</tr>
+
+        <tr class="day-row">
+    <td>
+        Friday
+        <div class="event-bubble">
+            <strong>Friday Events</strong>
+            <p>10:00 - Macaw Flight Experience</p>
+            <p>11:30 - Elephant Feeding</p>
+            <p>13:00 - Sloth Sanctuary</p>
+            <p>14:30 - Touch Pool Experience</p>
+            <p>15:00 - Snake Handling Show</p>
+            <p>16:00 - Lion Encounter</p>
+        </div>
+    </td>
+    <td>09:00 AM</td>
+    <td>06:00 PM</td>
+</tr>
+
+        <tr class="day-row">
+    <td>
+        Saturday
+        <div class="event-bubble">
+            <strong>Saturday Events</strong>
+            <p>10:00 - Zipline Through the Canopy</p>
+            <p>11:30 - Elephant Feeding</p>
+            <p>12:30 - Cheetah Speed Demonstration</p>
+            <p>13:00 - Crocodile Feeding</p>
+            <p>14:30 - Sea Turtle Rescue Talk</p>
+            <p>15:00 - Touch Pool Experience</p>
+            <p>15:30 - Snake Handling Show</p>
+            <p>16:00 - Lion Encounter</p>
+            <p>16:30 - Macaw Flight Experience</p>
+        </div>
+    </td>
+    <td>09:00 AM</td>
+    <td>06:00 PM</td>
+</tr>
+
+        <tr class="day-row">
+    <td>
+        Sunday
+        <div class="event-bubble">
+            <strong>Sunday Events</strong>
+            <p>10:00 - Macaw Flight Experience</p>
+            <p>11:30 - Elephant Feeding</p>
+            <p>12:00 - Cheetah Speed Demonstration</p>
+            <p>12:30 - Touch Pool Experience</p>
+            <p>13:00 - Crocodile Feeding</p>
+            <p>14:30 - Sea Turtle Rescue Talk</p>
+            <p>15:00 - Snake Handling Show</p>
+            <p>15:30 - Touch Pool Experience</p>
+            <p>16:00 - Zipline Through the Canopy</p>
+        </div>
+    </td>
+    <td>09:00 AM</td>
+    <td>06:00 PM</td>
+</tr>
     </table>
-<br>
-<br>
+    <p class="last-entry">
+        Last admission: <strong>5:00 PM</strong>
+    </p>
+</section>
 
 
 <section class="faq-section" id="faq">
@@ -293,5 +397,25 @@
 <a href="contact.html">Contact Us</a>
 
 <script src="scripts/script.js"></script>
+    <p>📧 info@wildheartecopark.co.uk</p>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+
+            <a href="#">📘 Facebook</a>
+            <a href="#">📸 Instagram</a>
+            <a href="#">▶ YouTube</a>
+            <a href="#">🎵 TikTok</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 WildHeart Eco Park. All Rights Reserved.
+    </p>
+</footer>
+
+
 </body>
 </html>

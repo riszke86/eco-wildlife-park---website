@@ -7,54 +7,66 @@
     <title>Contact Us | WildHeart Eco Park</title>
 
     <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
 
-<header class="hero">
+<header class="hero contact-hero">
     <video autoplay muted loop playsinline>
         <source src="styles/park_name15sec.mp4" type="video/mp4">
     </video>
+
+    <div class="hero-title">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you</p>
+    </div>
 </header>
 
 <section class="contact">
 
-    <h1>Contact Us</h1>
-
-    <p class="intro">
-        We'd love to hear from you! Whether you have questions about our exhibits,
+    <p class="contact-intro">
+        We'd love to hear from you. Whether you have questions about exhibits,
         tickets, school visits or special events, our team is here to help.
     </p>
 
-    <div class="contact-box">
+    <div class="contact-layout">
 
-        <p><strong>📍 Address</strong><br>
-        123 Wildlife Lane<br>
-        Green Valley<br>
-        Hampshire SO14 0AA<br>
-        United Kingdom</p>
+        <div class="contact-info-card">
+            <h2>Visit Information</h2>
 
-        <p><strong>📞 Phone</strong><br>
-        +44 (0)23 8000 1234</p>
+            <p><i class="fa-solid fa-location-dot"></i>
+                <strong>Address</strong><br>
+                123 Wildlife Lane, Green Valley, Hampshire, SO14 0AA
+            </p>
 
-        <p><strong>📧 Email</strong><br>
-        info@wildheartecopark.co.uk</p>
+            <p><i class="fa-solid fa-phone"></i>
+                <strong>Phone</strong><br>
+                +44 (0)23 8000 1234
+            </p>
 
-        <p><strong>🕒 Opening Hours</strong><br>
-        Monday – Sunday<br>
-        9:00 AM – 6:00 PM</p>
+            <p><i class="fa-solid fa-envelope"></i>
+                <strong>Email</strong><br>
+                info@wildheartecopark.co.uk
+            </p>
 
+            <p><i class="fa-solid fa-clock"></i>
+                <strong>Opening Hours</strong><br>
+                Monday – Sunday: 9:00 AM – 6:00 PM
+            </p>
+        </div>
+
+        <form class="contact-form-card">
+            <h2>Send us a message</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Subject">
+            <textarea rows="6" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
-
-    <h2>Send us a message</h2>
-
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="text" placeholder="Subject">
-        <textarea rows="6" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-    </form>
 
     <a class="home-button" href="20061275.html">← Back to Home</a>
 
