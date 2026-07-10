@@ -134,3 +134,103 @@ if (todayTitle && todayHours && openStatus && nextEvent) {
         nextEvent.textContent = "No more events today. Please check tomorrow's programme.";
     }
 }
+
+
+
+
+
+function openAnimal(title, image, text) {
+    document.getElementById("modal-title").textContent = title;
+    document.getElementById("modal-image").src = image;
+    document.getElementById("modal-text").textContent = text;
+    document.getElementById("animal-modal").style.display = "flex";
+}
+
+function closeAnimal() {
+    document.getElementById("animal-modal").style.display = "none";
+}
+
+
+function openAnimal(title, image, text, diet, habitat, lifespan, status) {
+    document.getElementById("modal-title").textContent = title;
+    document.getElementById("modal-image").src = image;
+    document.getElementById("modal-text").textContent = text;
+    document.getElementById("modal-diet").textContent = diet;
+    document.getElementById("modal-habitat").textContent = habitat;
+    document.getElementById("modal-lifespan").textContent = lifespan;
+    document.getElementById("modal-status").textContent = status;
+
+    document.getElementById("animal-modal").style.display = "flex";
+}
+
+function closeAnimal() {
+    document.getElementById("animal-modal").style.display = "none";
+}
+
+
+
+
+const counters = document.querySelectorAll(".counter");
+const impactSection = document.querySelector(".impact-section");
+
+let countersStarted = false;
+
+function startCounters() {
+    counters.forEach(counter => {
+        counter.innerText = "0";
+
+        const target = Number(counter.getAttribute("data-target"));
+        const increment = Math.ceil(target / 150);
+
+        function updateCounter() {
+            const current = Number(counter.innerText);
+
+            if (current < target) {
+                counter.innerText = Math.min(current + increment, target);
+                setTimeout(updateCounter, 18);
+            }
+        }
+
+        updateCounter();
+    });
+}
+
+if (impactSection) {
+    const observer = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting && !countersStarted) {
+            countersStarted = true;
+            startCounters();
+        }
+    }, {
+        threshold: 0.4
+    });
+
+    observer.observe(impactSection);
+}
+
+function openGallery(imageSrc) {
+    document.getElementById("gallery-large-image").src = imageSrc;
+    document.getElementById("gallery-modal").style.display = "flex";
+}
+
+function closeGallery() {
+    document.getElementById("gallery-modal").style.display = "none";
+}
+
+
+function openExperience(title, image, duration, info, difficulty, description) {
+    event.preventDefault();
+
+    document.getElementById("experience-title").textContent = title;
+    document.getElementById("experience-image").src = image;
+    document.getElementById("experience-duration").textContent = duration;
+    document.getElementById("experience-info").textContent = info;
+    document.getElementById("experience-difficulty").textContent = difficulty;
+    document.getElementById("experience-description").textContent = description;
+
+    document.getElementById("experience-modal").style.display = "flex";
+}
+
+function closeExperience() {
+    document.getElementById("experience-modal").style.display = "none";
+}
