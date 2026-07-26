@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 import sqlite3 from "sqlite3";
 
 const app = express();
-const PORT = 5000;
+const PORT = 5001;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,7 +24,7 @@ app.use(express.static(__dirname));
 
 // Home page
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "20061275.html"));
+    res.sendFile(path.join(__dirname, "eco-wildlife-park.html"));
 });
 
 // About Us page
