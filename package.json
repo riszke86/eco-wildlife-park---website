@@ -1,24 +1,33 @@
 {
-  "name": "20061275",
+  "name": "eco-wildlife-park",
   "version": "1.0.0",
-  "description": "",
-  "main": "node.js",
+  "description": "WildHeart Eco Park web development project",
+  "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.mjs",
+    "dev": "node --watch index.mjs",
+    "test": "echo \"No tests configured\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/riszke86/20061275.git"
+    "url": "git+https://github.com/riszke86/eco-wildlife-park---website.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "express",
+    "ejs",
+    "sqlite",
+    "wildlife",
+    "web-development"
+  ],
+  "author": "Irisz Marcsik dos Anjos",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
-    "url": "https://github.com/riszke86/20061275/issues"
+    "url": "https://github.com/riszke86/eco-wildlife-park---website/issues"
   },
-  "homepage": "https://github.com/riszke86/20061275#readme",
+  "homepage": "https://github.com/riszke86/eco-wildlife-park---website#readme",
   "dependencies": {
+    "ejs": "^6.0.1",
     "express": "^5.2.1",
     "sqlite3": "^6.0.1"
   }
